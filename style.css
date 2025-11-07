@@ -1,0 +1,50 @@
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+  }
+  
+  /* Esconde o checkbox padrão */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* O fundo do switch */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, #d16ba5, #86a8e7);
+    border-radius: 20px;
+    transition: 0.3s;
+  }
+  
+  /* O círculo branco */
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+  
+  /* Quando estiver ativado */
+  input:checked + .slider {
+    background: linear-gradient(90deg, #86a8e7, #d16ba5);
+  }
+  
+  /* Move o círculo */
+  input:checked + .slider::before {
+    transform: translateX(10px);
+  }

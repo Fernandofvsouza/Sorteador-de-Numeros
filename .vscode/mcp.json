@@ -1,5 +1,5 @@
 {
-    "mcpServers": {
+    "servers": {
       "Figma MCP": {
         "command": "npx",
         "args": ["-y", "figma-developer-mcp", "--figma-api-key=figd_OV9qW9XscpVOrGXMqW3NYSCA00zbPgQZU12CitmA", "--stdio"]
