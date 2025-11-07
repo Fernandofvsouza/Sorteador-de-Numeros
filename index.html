@@ -7,25 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="logo-header">
         <img src="/assets/logo.png" alt="logo">
         <h1>NUMBERS</h1>
     </header>
     <div class="main-container">
         <div class="container-left">
             <div class="header-container-left"> 
-                <p>ONLINE - GRATUITO</p>
-                <h1 class="title">SORTEADOR DE NÚMEROS</h1>
+                <p class="online">ONLINE   -  GRATUITO</p>
+                <h1 class="title">SORTEADOR <br>DE NÚMEROS</h1>
             </div>
             <div class="questions">
                 <div class="question">
-                    <img src="/assets/boneco.png" alt="">
-                    <h3>Como funciona o sorteador de números?</h3>
+                    <div class="sub-question">
+                        <img src="/assets/boneco.png" alt="">
+                        <h3>Como funciona o sorteador de números?</h3>
+                    </div>
                     <h4>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário</h4>
                 </div>
                 <div class="question">
-                    <img src="/assets/boneco.png" alt="">
-                    <h3>Posso escolher o intervalo dos números?</h3>
+                    <div class="sub-question">
+                        <img src="/assets/boneco.png" alt="">
+                        <h3>Posso escolher o intervalo dos números?</h3>
+                    </div>
                     <h4>
                         Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.
                     </h4>
@@ -40,17 +44,19 @@
                 <h2>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</h2>
             </div>
             <div class="numbers">
-                <div class="num">
-                    <label for="numeros">NÚMEROS</label>
-                    <input type="number" name="numeros" id="numeros">
-                </div>
-                <div class="num">
-                    <label for="from">DE</label>
-                    <input type="number" name="from" id="from">
-                </div>
-                <div class="num">
-                    <label for="to">ATÉ</label>
-                    <input type="number" name="to" id="to">
+                <div class="sub-numbers">
+                    <div class="num">
+                        <label for="numeros">NÚMEROS</label>
+                        <input type="number" name="numeros" id="numeros">
+                    </div>
+                    <div class="num">
+                        <label for="from">DE</label>
+                        <input type="number" name="from" id="from">
+                    </div>
+                    <div class="num">
+                        <label for="to">ATÉ</label>
+                        <input type="number" name="to" id="to">
+                    </div>
                 </div>
                 <div class="no-repeat">
                     <label class="switch">
@@ -59,7 +65,7 @@
                       </label>
                       <p>Não repetir número</p>
                 </div>
-                <button>SORTEAR -> </button>
+                <button>SORTEAR  ->  </button>
                 
             </div>
         </div>

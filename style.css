@@ -1,4 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
+:root {
+  --font-family: 'Sora', sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+  --font-flex: 'Roboto Flex', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+body {
+  min-height: 100vh;
+  background-image: 
+  linear-gradient(to bottom, #020202 20%, transparent 100%), 
+  url("assets/Linha.png");
+  background-repeat: repeat;
+  background-size: 50%, auto;
+  background-position: center center;
+  background-color: #020202;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+ 
+}
+.logo-header{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 76px;
+  margin-left: 120px;
+}
+.logo-header img{
+  width: 38px;
+  height: 38px;
+}
+.logo-header h1{
+  font-size: 24px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.main-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:90px;
+  margin-bottom: 150px;
+  margin-left: 134px;
+  margin-right: 134px; 
+  gap: 108px;
+  width: calc(100% - 268px);
+}
+
+.container-left{
+  max-width: 508px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-right: 20px;
+}
+
+.header-container-left{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.online{
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 18px;
+  background: linear-gradient(#c7c9cc 0%, #3d3d3d 100%); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  padding-left: 2px;
+}
+.title{
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 100px;
+  
+  
+}
+
+.questions{
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.question{
+  display: flex;
+  flex-direction: column;
+}
+.sub-question{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.sub-question img{
+  width: 20px;
+}
+
+.sub-question h3{
+  font-size: 16px;
+  font-family: var(--font-flex);
+  color: #c58de7;
+  font-weight: 400;
+}
+
+.question h4{
+  font-size: 14px;
+  font-family: var(--font-flex);
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 24px;
+  margin-left: 26px;
+  margin-top: 4px;
+}
+
+.container-right{
+  max-width: 508px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 108px;
+  margin-top: 34px;
+  margin-bottom: 34px;
+
+  gap: 40px;
+}
+
+.title-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 2px;
+}
+
+.title-right h1{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--font-flex);
+}
+
+.title-right h2{
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 28px;
+  font-family: var(--font-flex);
+}
+
+.numbers{
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-numbers{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.num{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.num label{
+  font-family: var(--font-flex);
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(#c7c9cc 0%, #3d3d3d 100%); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
+
+#numeros{
+  background-color: #111012; 
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border-radius: 10px;
+}
+
+#from{
+  background-color: #111012; 
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border-radius: 10px;
+
+}
+
+#to{
+  background-color: #111012; 
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  border: none;
+  width: 100px;
+  height: 60px;
+  outline: none;
+  border-radius: 10px;
+
+}
+
+.no-repeat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.no-repeat p{
+  font-family: var(--font-flex);
+  font-size: 14px;
+}
+
+.numbers button{
+  background-color: #24222e;
+  color: #ffffff;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: var(--font-flex);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
 .switch {
     position: relative;
     display: inline-block;
