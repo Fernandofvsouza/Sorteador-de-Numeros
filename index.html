@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
@@ -38,39 +39,41 @@
             </div>
             
         </div>
-        <div class="container-right">
-            <div class="title-right">
-                <h1>QUERO SORTEAR:</h1>
-                <h2>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</h2>
-            </div>
-            <div class="numbers">
-                <div class="sub-numbers">
-                    <div class="num">
-                        <label for="numeros">NÚMEROS</label>
-                        <input type="number" name="numeros" id="numeros">
-                    </div>
-                    <div class="num">
-                        <label for="from">DE</label>
-                        <input type="number" name="from" id="from">
-                    </div>
-                    <div class="num">
-                        <label for="to">ATÉ</label>
-                        <input type="number" name="to" id="to">
-                    </div>
+        <div class="container-right" id="container-right">
+            <div class="right">
+                <div class="title-right">
+                    <h1>QUERO SORTEAR:</h1>
+                    <h2>defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!</h2>
                 </div>
-                <div class="no-repeat">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider"></span>
-                      </label>
-                      <p>Não repetir número</p>
-                </div>
-                <button>SORTEAR  ->  </button>
+                <div class="numbers">
+                    <div class="sub-numbers">
+                        <div class="num">
+                            <label for="numeros">NÚMEROS</label>
+                            <input type="number" name="numeros" id="numeros">
+                        </div>
+                        <div class="num">
+                            <label for="from">DE</label>
+                            <input type="number" name="from" id="from">
+                        </div>
+                        <div class="num">
+                            <label for="to">ATÉ</label>
+                            <input type="number" name="to" id="to">
+                        </div>
+                    </div>
+                    <div class="no-repeat">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                          </label>
+                          <p>Não repetir número</p>
+                    </div>
+                    <button id="btn-sorteio">SORTEAR  ->  </button>
                 
+                </div>
             </div>
         </div>
     </div>
 
-    
+    <script src="script.js"></script>
 </body>
 </html>
